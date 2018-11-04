@@ -1,7 +1,3 @@
-2) create "genderize_gender_mapping.json"
-	-> the difference between genderize_results_less8.json and verified_gender_mapping.json
-	...STUCK ON "file_differs.py"
-
 4) create "persons_final.json"
 	-> hand-verify remaining null names in genderize_results_less8.json as best as possible
 	-> useful to use university data from persons.csv

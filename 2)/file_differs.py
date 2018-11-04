@@ -21,24 +21,20 @@ for ay in arr2:
 	revnam = revnam[:-1]
 	if (arr1.get(nam, default) != default):
 		del arr1[nam]
-	elif (arr1.get(ay, default) != default):
-		del arr1[ay]
 	elif (arr1.get(revnam, default) != default):
 		del arr1[revnam]
+	elif (arr1.get(ay, default) != default):
+		del arr1[ay]
 	else:
 		r = 0
 		ay2 = ay
 		nam2 = nam
 		revnam2 = revnam
 		while(r < 4):
-			ay2 += "0"
 			nam2 += "0"
 			revnam2 += "0"
 			r += 1
-			if(arr1.get(ay2,default) != default):
-				del arr1[ay2]
-				r = 5
-			elif(arr1.get(nam2,default) != default):
+			if(arr1.get(nam2,default) != default):
 				del arr1[nam2]
 				r = 5
 			elif(arr1.get(revnam2,default) != default):
@@ -47,6 +43,18 @@ for ay in arr2:
 		if(r == 4):
 			arr3[ay] = arr2[ay]
 			print(nam)
+
+#remove duplicates
+arr4 = {}
+for ay in arr1:
+	arr4[ay] = arr1[ay]
+for ay in arr1:
+	ay = ay + "0"
+	while (arr4.get(ay,default) != default):
+		del arr4[ay]
+		ay += "0"
+
+arr1 = arr4
 
 with open("genderize_gender_mapping.json", mode="w", encoding='utf-8') as f:
 		json.dump(arr1, f, indent=4, sort_keys=True)

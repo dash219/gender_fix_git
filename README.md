@@ -6,7 +6,7 @@ gender_fix_git
 
 2) create "genderize_gender_mapping.json"
 	-> the difference between genderize_results_less8.json and verified_gender_mapping.json
-	...STUCK ON "file_differs.py"
+	...DONE, had to fix duplicates in verified_gender_mapping.json
 
 3) create "persons_post_genderize.csv" (optional step, useful for graphing)
 	-> combine data from genderize_results_less8.json with persons.csv
