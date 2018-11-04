@@ -22,6 +22,6 @@ gender_fix_git
 
 6) create "persons_final.csv"
 	-> combine data from persons_final.json with persons.csv
-	...NEED TO FINISH 4)
+	...NEED "persons_final.json" FROM 4)
 
 7) re-run the R file that creates the graphs using persons_final.csv
