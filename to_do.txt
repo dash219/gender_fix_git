@@ -1,13 +1,6 @@
-1) create "genderize_results_less8.json"
-	-> set all genders w/ p<0.8 in genderize_results_noconf.json to null
-	...DONE
-
 2) create "genderize_gender_mapping.json"
 	-> the difference between genderize_results_less8.json and verified_gender_mapping.json
 	...STUCK ON "file_differs.py"
-
-3) create "persons_post_genderize.csv" (optional step, useful for graphing)
-	-> combine data from genderize_results_less8.json with persons.csv
 
 4) create "persons_final.json"
 	-> hand-verify remaining null names in genderize_results_less8.json as best as possible
