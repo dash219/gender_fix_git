@@ -1,5 +1,8 @@
 gender_fix_git
+Continued work on Summer 2018 employment; graphing data for gender distributions in CS academia.
 
+
+------------------------------------------------------------------------------------------------
 1) create "genderize_results_less8.json"
 	-> set all genders w/ p<0.8 in genderize_results_noconf.json to null
 	...DONE
